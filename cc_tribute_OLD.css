@@ -4,6 +4,10 @@
 /* BEGIN IMPORT		*/
 
 /* BEGIN ELEMENTS	*/
+
+/* a:hover must come after a:link and a:visited
+ *    a:active must come after a:hover; */
+
 .badge {
 	font-size:95%;
 }
@@ -13,19 +17,30 @@
 	margin-right: 10px;
 }
 
- .photo {
+.text-primary {
+	color: #000000;
+}
+
+.photo {
 	border-radius: 20px;
 	margin-bottom: 25px;
 	box-shadow: 3px 3px 5px;
-} 
+}
 
 .right-side-photos {
 	margin-top: 55px;
 }
 
+.title {
+	text-shadow: 1px 2px 6px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	background-color: #FFFFFF;
+}
+
 body {
 	font-family: 'PT+Sans', serif;
-	font-size: 125%;
+	font-size:175%;
 	background: url('./img/collage.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -47,57 +62,30 @@ div {
 }
 
 h1 {
-	padding-top: 2px;
-	font-size: 225%;
-	font-style: bold;
+	padding-top: 5px;
+	font-size: 340%;
 }
 
 h2 {
-	font-size: 155%;
-	font-style: italic;
+	font-size: 290%;
 }
 
 h3 {
-	font-size: 120%;
+	font-size: 200%;
 }
+
 /* END ELEMENTS	*/
 
 
 /*BEGIN Section IDs	*/
-#image {
-	border-radius: 20px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	box-shadow: 3px 3px 5px;
-}
+/* END IDs */
 
-#img-div {
-  background: #FFFFFF;
-  border-radius: 20px;
-}
 
-#img-caption {
-  position: relative;
-  top: 5px;
-  right: 5px;
-  background-color: transparent;
-  padding-bottom: 5px;
-}
+/* BEGIN CLASSES: 	*/
+/*					*/
+/* END CLASSES		*/
 
-#title {
-	padding-top: 0px;
-	padding-bottom: 1px;
-	margin: 0px;
-	text-shadow: 1px 1px 3px;
-}
-
-#tribute-info {
-
-}
-
-#tribute-link {
-
-}
-/* END OF FILE:  cc_tribute.css	*/
+/*
+ *  * 
+ *   */
+/* END OF FILE:  tribute_page.css	*/
