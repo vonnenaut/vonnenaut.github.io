@@ -1,90 +1,58 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<!-- 
-
-Hello Camper!
-
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
 <HTML>
-	<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>A Tribute to Chris Cornell</title>
-	<base href="./img/">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link rel="stylesheet" href= "../cc_tribute.css" rel="stylesheet" type="text/css">			
-	</head>
-	<body>
-	  <div class="container-fluid" id="main"> 
-	    <div class="row title text-primary">		
-			<div class="title col-sm-4" id="img-div">
-			  <img class="img-responsive photo" id="image" src="chriscornell_sm.jpg" alt="a photo of Chris Cornell">
-			  <div class="title" id="img-caption">
-                  <h1 id="title">Chris Cornell</h1>
-                  <h2 id="title">1964 - 2017</h2>
-              </div>
-			  </div>
-		    </div>
-		  </div>
-		</div>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href= "./css/cc_tribute.css" rel="stylesheet" type="text/css">
+  </head>
 
-		<div class="col-sm-4">
-				<div class="list-group">
-					<a href="#" class="list-group-item text-left target1" id="tribute-info"><h2>About</h2><span class="badge"></span></a>
-					<a href="#" class="list-group-item target1">b. July 20, 1964<br>d. May 18, 2017<span class="badge"></span></a>
-					<a href="#" class="list-group-item target1"><span class="glyphicon glyphicon-certificate"></span>from Seattle, WA<span class="badge"></span></a>
-					<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Chris_Cornell_discography" class="list-group-item target1"><span class="glyphicon glyphicon-certificate"></span>lead vocalist of Soundgarden, Audioslave and Temple of the Dog<span class="badge"></span></a>
-					<a id="tribute-link" target="_blank" href="https://www.britannica.com/art/octave-music" class="list-group-item target1"><span class="glyphicon glyphicon-certificate"></span>had a near-4-octave vocal range<span class="badge"></span></a>
-					<a id="tribute-link" target="_blank" href="https://www.grammy.com/grammys/artists/soundgarden" class="list-group-item target1"><span class="glyphicon glyphicon-certificate"></span>won two Grammys; nominated 14 times<span class="badge"></span></a>
-					<a href="#" class="list-group-item text-right target1"><h3>millions</h3>
-							<a href="#" class="list-group-item target1"><span class="glyphicon glyphicon-music"></span><span class="badge">14.8</span> albums</a>
-							<a href="#" class="list-group-item target1"><span class="glyphicon glyphicon-music"></span><span class="badge">8.8 </span>digital songs<span class="badge"></span></a>
-							<a href="#" class="list-group-item target1"><span class="glyphicon glyphicon-music"></span><span class="badge">300</span>on-demand audio streams (U.S.)<span class="badge"></span></a>
-							<a href="#" class="list-group-item target1"><span class="glyphicon glyphicon-music"></span><span class="badge">30</span>records <br>(worldwide, 2017)<span class="badge"></span></a>
-							<h3><a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Chris_Cornell" class="list-group-item target1 text-right"><span class="glyphicon glyphicon-info-sign"></span>more info.<span class="badge"></span></a></h3>
-					</a>
-				</div>
+  <body>
+    <div id="main">
+		<div id="img-div">
+	    	<img id="image" src="./img/Cornell1_sm.jpg" alt="a photo of Chris Cornell">
+	    	<h4 id="img-caption">C. Cornell</h4>
+      	</div>
+      	<div id="title">
+        	<h1>Chris Cornell</h1>
+          	<h2>1964 - 2017</h2>
+      	</div>
+
+		<div id="tribute-info">
+		    <a target="_blank" href="https://en.wikipedia.org/wiki/Chris_Cornell" class="list-group-item target1">b. July 20, 1964<br>d. May 18, 2017<span class="badge"></span>
+		    <span class="glyphicon glyphicon-certificate"></span>from Seattle, WA<span class="badge"></span></a>
+			<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Chris_Cornell_discography" class="list-group-item target1">
+
+			<span class="glyphicon glyphicon-certificate"></span>lead vocalist of Soundgarden, Audioslave and Temple of the Dog<span class="badge"></span></a>
+			<a id="tribute-link" target="_blank" href="https://www.britannica.com/art/octave-music" class="list-group-item target1"><span class="glyphicon  glyphicon-certificate"></span>had a near-4-octave vocal range<span class="badge"></span></a>
+			<a id="tribute-link" target="_blank" href="https://www.grammy.com/grammys/artists/soundgarden" class="list-group-item target1"><span class="  glyphicon glyphicon-certificate"></span>won two Grammys; nominated 14 times<span class="badge"></span></a>
+			<h3>millions</h3>
+			<div id="stats">		    	
+		    	<a href="#"><span class="glyphicon glyphicon-music"></span><span class="badge">14.8</span>albums</a>
+				<br>
+				<a href="#"><span class="glyphicon glyphicon-music"></span>
+				<span class="badge">8.8 </span>digital songs<span class=  "badge"></span></a>
+				<br>
+				<a href="#"><span class="glyphicon glyphicon-music"></span><span class="badge">300</span>on-demand audio streams (U.S.)<span class="badge"></span></a>
+				<br>
+				<a href="#"><span class="glyphicon glyphicon-music"></span><span class="badge">30</span>records (worldwide, 2017)<span class="badge"></span></a>
+				<h3><a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Chris_Cornell"><span class=  "glyphicon glyphicon-info-sign"></span>more info.<span class="badge"></span></a></h3></a>
 			</div>
-			<div class="col-sm-8 text-center right-side-photos">
-				<div class="row">
-					<div class="col-xs-4">
-						<a href="sg_early.jpg"><img class="img-responsive photo img-thumbnail" src="sg_early.jpg"></a>
-					</div>
-					<div class="col-xs-4">
-						<a href="soundgarden2.jpg"><img class="img-responsive photo img-thumbnail" src="soundgarden2.jpg"></a>
-					</div>
-					<div class="col-xs-4">
-						<a href="audioslave.jpg">
-						<img class="img-responsive photo img-thumbnail" src="audioslave.jpg"></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-4">
-						<a href="collage.jpg"><img class="img-responsive photo img-thumbnail" src="collage.jpg"></a>						
-					</div>
-					<div class="col-xs-4">
-						<a href="soundgardenaudioslave.jpg"><img class="img-responsive photo img-thumbnail" src="soundgardenaudioslave.jpg"></a>
-					</div>
-					<div class="col-xs-4">
-						<a href="2.jpg"><img class="img-responsive photo img-thumbnail" src="2.jpg"></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-4">
-						<a href="chris-cornell.jpg"><img class="img-responsive photo img-thumbnail" src="chris-cornell.jpg"></a>
-					</div>
-					<div class="col-xs-4">
-						<a href="Cornell_and_guitar.jpg"><img class="img-responsive photo img-thumbnail" src="Cornell_and_guitar.jpg"></a>
-					</div>
-					<div class="col-xs-4">
-						<a href="sg_bmf_sym_black.jpg"><img class="img-responsive photo img-thumbnail" src="sg_bmf_sym_black.jpg"></a>
-					</div>
-				</div>
+		    	
+	    </div>
 
-		</div>
-	</body>
+	    <div id="ti-photo-container">
+          <a target="_blank" href="./img/sg_early.jpg"><img class="photo" src="./img/sg_early_THMB.jpg"></a>
+	      <a target="_blank" href="./img/soundgarden2.jpg"><img class="photo" src="./img/soundgarden2_THMB.jpg"></a>
+          <a target="_blank" href="./img/audioslave.jpg"><img class="photo" src="./img/audioslave_THMB.jpg"></a>
+          <a target="_blank" href="./img/collage.jpg"><img class="photo" src="./img/collage_THMB.jpg"></a>
+          <a target="_blank" href="./img/soundgardenaudioslave.jpg"><img class="photo" src="./img/soundgardenaudioslave_THMB.jpg"></a>        
+	      <a target="_blank" href="./img/Cornell2.jpg"><img class="photo" src="./img/Cornell2_THMB.jpg"></a>
+
+	      <a target="_blank" href="./img/Cornell3.jpg"><img class="photo" src="./img/Cornell3_THMB.jpg"></a>
+	      <a target="_blank" href="./img/Cornell4.jpg"><img class="photo" src="./img/Cornell4_THMB.jpg"></a>  
+	      <a target="_blank" href="./img/sg_bmf.jpg"><img class="photo" src="./img/sg_bmf_THMB.jpg"></a>
+	    </div>
+	</div>
+  </body>
 </HTML>

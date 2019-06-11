@@ -1,0 +1,120 @@
+/*
+ * cc_tribute.css
+ * css for Chris Cornell Tribute Page 
+ /* */
+/* BEGIN IMPORT		*/
+
+/* BEGIN CLASSES    */
+.badge {
+	font-size:95%;
+	margin-right: 10px;
+}
+
+.glyphicon {
+	font-size:80%;
+	margin-right: 5px;
+}
+
+.photo {
+	border-radius: 35px;
+	margin: 10px 10px 20px 0px;
+	box-shadow: 3px 3px 5px;
+} 
+/* BEGIN ELEMENTS	*/
+body {
+	font-family: 'PT+Sans', serif;
+	font-size: 180%;
+	font-color: black;
+	background: url('../img/collage.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: black;
+	padding: 0;
+	border: 0;
+	margin: 0 auto;
+	background-size: cover;
+	background-color: #000000;	
+}
+
+div {
+	padding: 10px;
+}
+
+h1 {
+	padding-top: 2px;
+	font-size: 380%;
+	font-style: bold;
+}
+
+h2 {
+	font-size: 220%;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 175%;
+}
+
+h4 {
+	font-style: italic;
+}
+
+/*BEGIN SECTION IDs	*/
+#main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat (4, 1fr);
+	grid-template-areas: 
+	  "portrait title title"
+	  "caption title title"
+	  "sidebar image image"
+	  ". image image";
+}
+
+#img-div {
+	grid-area: portrait;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-bottom: 2px;
+	margin-top: 15px;
+	margin-left: 15px;
+	border-top-left-radius: 25px;
+	background-color: white;
+}
+
+#image {
+	border-radius: 25px;
+}
+
+#img-caption {
+	grid-area: caption;
+}
+
+#stats {
+	padding-left: 15px;
+}
+
+#title {
+	grid-area: title;
+	text-shadow: 2px 2px 4px;
+	margin-top: 15px;
+	background-color: white;
+}
+
+#tribute-info {
+	grid-area: sidebar;
+	margin-left: 15px;
+	background-color: white;
+}
+
+#ti-photo-container {
+  	grid-area: image;
+  	padding-top: 20px;
+  	padding-left: 30px;
+}
+/* END OF FILE:  cc_tribute.css	*/
