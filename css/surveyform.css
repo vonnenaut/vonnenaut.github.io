@@ -6,32 +6,32 @@
 
 /* BEGIN CLASSES    */
 .ddown {
-	position: relative;
-	display: inline-block;
+	padding: 20px 0px 20px 0px;
 }
 
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: green;
-	min-width: 160px;
-	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-}
 /* BEGIN ELEMENTS	*/
-
-
+div {
+	padding: 10px 0px 10px 0px;
+}
 /*BEGIN SECTION IDs	*/
+#main {
+	text-align: center;
+}
+
 #dropdown {
-	background-color: blue;
-	color: white;
-	padding: 10px;
+	background-color: green;
+	color: black;
+	padding: 5px;
 	font-size: 16px;
 	border: none;
 }
 
-#title {
+#header {
+	text-align: center;
+}
 
+#title {
+	font-size: 110%;
 }
 
 #description {
@@ -39,6 +39,13 @@
 }
 
 #survey-form {
-	
+	display: inline-block; text-align: left;
+	padding: 20px 0px 0px 0px;
+	line-height: 40px;
+}
+
+#submit {
+	font-size: 105%;
+	padding: 5px;
 }
 /* END OF FILE:  surveyform.css	*/

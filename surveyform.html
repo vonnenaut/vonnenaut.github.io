@@ -1,28 +1,72 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <HTML>
 	<head>
-		<title>Survey Form</title>
+		<title>The Metaform Form</title>
 		<link rel="stylesheet" href="./css/surveyform.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div id="title"><h1>Survey Form</h1></div>
-		<p id="description">Let me know how I can improve this form.</p>
-		<form id="survey-form">
-			<label id="name-label">Name:</label>
-			<input type="text" id="name" value="name" required>
-			<label id="email-label">email:</label>
-			<input type="email" id="email" value="email" required>
-			<label id="number-label">number:</label>
-			<input type="number" id="number" value="number between 1 and 10" min="1" max="10">
-			<!-- Doesn't work Try: https://www.youtube.com/watch?v=rgUp302f_lY
-			<div class="ddown">
-				<button id="dropdown">Dropdown</button>
-				<div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				</div>
-			</div>-->
-		</form>
+		<div id="main">
+			<div id="header"><h1 id="title">Metaform Form</h1>
+			<p id="description">Please fill out this form letting us know how we can improve this form.</p>
+			</div>
+			<form id="survey-form">
+				<label id="name-label">Name:</label>
+				<input type="text" id="name" value="name" required placeholder="Enter your name.">
+				<br>
+				<label id="email-label">email:</label>
+				<input type="email" id="email" value="email" required placeholder="Enter your email address.">
+				<br>
+				<label id="number-label">number:</label>
+				<input type="number" id="number" value="number" min="1" max="10" placeholder="Enter a number between 1 and 10.">
+				<br>
+				<div class="ddown">This form is best described as
+					<select id="dropdown">
+						<option value="stale">Delightful</option>
+						<option value="scary">Scary</option>
+						<option value="delightful">Stale</option>
+						<option value="savory">Savory</option>
+					</select>
+				</div>	
 
+				<div id="radio">How do you rate the quality of this form?<br>
+					<label for="excellent">
+						<input value="excellent" type="radio" name="quality-rating">excellent
+					</label>
+					<label for="good">
+						<input value="good" type="radio" name="quality-rating">good
+					</label>
+					<label for="remarkable">
+						<input value="remarkable" type="radio" name="quality-rating">remarkable
+					</label>
+					<label for="not bad">
+						<input value="not bad" type="radio" name="quality-rating">not bad
+					</label>
+					<label for="bad">
+						<input value="bad" type="radio" name="quality-rating">bad
+					</label>
+				</div>
+
+				<div id="checkbox">What does this form need?<br>
+					<label for="radio">
+						<input value="radio" type="checkbox" name="checkbox">radio buttons
+					</label>
+					<label for="check">
+						<input value="check" type="checkbox" name="checkbox">checkboxes
+					</label>
+					<label for="textbox">
+						<input value="textbox" type="checkbox" name="checkbox">text boxes
+					</label>	
+					<label for="dropdown">
+						<input value="dropdown" type="checkbox" name="checkbox">dropdown menus
+					</label>
+				</div>
+				<div id="comment">Provide comments about the comments:<br>
+					<textarea>Enter your comments about your comments here.</textarea>
+				</div>
+				<div id="button">
+					<button id="submit" type="submit">submit</button>
+				</div>
+			</form>
+		</div>
 	</body>
 </HTML>
