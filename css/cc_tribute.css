@@ -2,7 +2,7 @@
  * cc_tribute.css
  * css for Chris Cornell Tribute Page 
  /* */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
 	h1 {
 		font-size: 10px;
 	}
