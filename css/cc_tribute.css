@@ -55,14 +55,17 @@ div {
 }
 
 h1 {
-	padding-top: 2px;
-	font-size: 380%;
+	padding: 10px 15px 0px 0px;
+	margin: 0;
+	font-size: 280%;
 	font-style: bold;
 }
 
 h2 {
-	font-size: 220%;
+	font-size: 180%;
 	font-style: italic;
+	padding: 20px 0px 0px 5px;
+	margin: 0;
 }
 
 h3 {
@@ -111,9 +114,8 @@ h4 {
 #title {
 	grid-area: title;
 	text-shadow: 2px 2px 4px;
-	margin-top: 15px;
+	margin: 15px 0px 0px 0px;
 	background-color: white;
-	display: flex;
 }
 
 #tribute-info {
