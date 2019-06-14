@@ -46,12 +46,6 @@ p {
 	max-width:55%;
 }
 
-#main {
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
-}
-
 #footer {
 	padding: 50px;
 }
@@ -68,7 +62,7 @@ p {
 	background-color: #001021;
 	opacity: 1.0;
 	width: 100%;
-	padding: 0px 0px 10px 0px;
+	padding: 0px;
 	margin: 0px;
 	border-bottom: 10px double #034748;
 	box-shadow: 2px 3px 3px;
@@ -83,6 +77,12 @@ p {
 #howitworks {
 	flex-shrink: 2;
 	text-align: center;
+}
+
+#main {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 #nav-bar {
@@ -107,6 +107,4 @@ p {
 	height: 30%;
 	width: 60%;
 }
-
-
 /* END OF FILE:  productlanding.css	*/
