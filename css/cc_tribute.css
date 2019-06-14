@@ -46,24 +46,24 @@ div {
 	padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 	h1 {
-		font-size: 110%;
+		font-size: 125%;
 	}
 	h2 {
-		font-size: 90%;
+		font-size: 105%;
 	}
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
 	h1 {
 		padding: 10px 15px 0px 0px;
 		margin: 0;
-		font-size: 280%;
+		font-size: 260%;
 		font-style: bold;
 	}	
 	h2 {
-		font-size: 180%;
+		font-size: 165%;
 		font-style: italic;
 		padding: 20px 0px 0px 5px;
 		margin: 0;
@@ -89,15 +89,14 @@ h4 {
 	  "caption title title"
 	  "sidebar image image"
 	  ". image image";
+	  margin: 0;
+	  padding: 10px 0px 0px 10px;
 }
 
 #img-div {
 	grid-area: portrait;
-	padding-top: 5px;
-	padding-left: 20px;
-	padding-bottom: 2px;
-	margin-top: 15px;
-	margin-left: 15px;
+	padding: 5px 0px 2px 15px;
+	margin: 20px 0px 0px: 0px;
 	border-top-left-radius: 25px;
 	background-color: white;
 }
@@ -108,6 +107,7 @@ h4 {
 
 #img-caption {
 	grid-area: caption;
+	margin: 15px 0px 0px 0px;
 }
 
 #stats {
@@ -117,13 +117,13 @@ h4 {
 #title {
 	grid-area: title;
 	text-shadow: 2px 2px 4px;
-	margin: 15px 0px 0px 0px;
+	margin: 0;
 	background-color: white;
 }
 
 #tribute-info {
 	grid-area: sidebar;
-	margin-left: 15px;
+	margin: 0;
 	background-color: white;
 }
 
