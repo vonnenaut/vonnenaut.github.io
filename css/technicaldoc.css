@@ -11,26 +11,22 @@
 }
 
 /* BEGIN ELEMENTS	*/
-
+ul {
+	max-width: 80%;
+}
 /*BEGIN SECTION IDs	*/
-#footer {
-	grid-area: footer;
+#main-body {
+	display: grid;
+	grid-template-columns: minmax(300px, auto) 1fr;
+	grid-gap: 10px;
+	grid-template-areas:
+		"nav info";
 }
 
 #main-doc {
+	grid-area: info;
+	width: 100%;
 	text-align: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-areas:
-		"nav nav"
-		"info info"
-		"info info"
-		"info info"
-		"info info"
-		"info info"
-		"footer footer";
-	grid-gap: 20px;
 }
 
 #navbar {
@@ -38,27 +34,18 @@
 	position: fixed;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	/* move navbar to left side on bigger screens; 
 		otherwise, keep it at top */
-	#main-doc {
+	#main-body {
+		grid-template-columns: 1fr;
 		grid-template-areas:
-			"nav info"
-			"nav info"
-			"nav info"
-			"nav info"
-			"nav info"
-			"nav info"
-			"footer footer";
+			"nav"
+			"info";
 	}
-}
 
-@media screen and (max-width: 599px) {
-	#main-doc {
-		grid-template-areas:
-			"nav nav"
-			"info info"
-			"footer footer";
+	#navbar {
+		position: inherit;
 	}
 }
 /* END OF FILE:  technicaldoc.css	*/
