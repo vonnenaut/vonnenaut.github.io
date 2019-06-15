@@ -2,20 +2,63 @@
  * technicaldoc.css
  * css for Product Landing Page 
  /* */
-/* BEGIN IMPORT		*/
+ /* BEGIN IMPORT		*/
 
 /* BEGIN CLASSES    */
 .main-section {
-
+	grid-area: info;
+	padding: 50px;
 }
-/* BEGIN ELEMENTS	*/
-#main-doc {
 
+/* BEGIN ELEMENTS	*/
+
+/*BEGIN SECTION IDs	*/
+#footer {
+	grid-area: footer;
+}
+
+#main-doc {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas:
+		"nav nav"
+		"info info"
+		"info info"
+		"info info"
+		"info info"
+		"info info"
+		"footer footer";
+	grid-gap: 20px;
 }
 
 #navbar {
-	
+	grid-area: nav;
+	position: fixed;
 }
-/*BEGIN SECTION IDs	*/
 
+@media screen and (min-width: 600px) {
+	/* move navbar to left side on bigger screens; 
+		otherwise, keep it at top */
+	#main-doc {
+		grid-template-areas:
+			"nav info"
+			"nav info"
+			"nav info"
+			"nav info"
+			"nav info"
+			"nav info"
+			"footer footer";
+	}
+}
+
+@media screen and (max-width: 599px) {
+	#main-doc {
+		grid-template-areas:
+			"nav nav"
+			"info info"
+			"footer footer";
+	}
+}
 /* END OF FILE:  technicaldoc.css	*/
