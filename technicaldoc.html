@@ -41,7 +41,7 @@
 					<ul>
 						<li><em>Client-side JavaScript</em> extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
 						<li><em>Server-side JavaScript</em> extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
-					<ul>
+					</ul>
 					This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
 				</section>
 
@@ -59,6 +59,7 @@
 					<p>Getting started with JavaScript is easy: all you need is a modern Web browser. This guide includes some JavaScript features which are only currently available in the latest versions of Firefox, so using the most recent version of Firefox is recommended.</p>
 
 					<p>There are two tools built into Firefox that are useful for experimenting with JavaScript: the Web Console and Scratchpad.</p>
+				</section>
 
 				<section class="main-section" id="The_Web_Console">
 					<header>The Web Console</header>
@@ -66,12 +67,11 @@
 
 					<p>To open the Web Console (Ctrl+Shift+I on Windows and Linux or Cmd-Option-K on Mac), select "Web Console" from the "Developer" menu, which is under the "Tools" menu in Firefox. It appears at the bottom of the browser window. Along the bottom of the console is a command line that you can use to enter JavaScript, and the output appears in the panel above:</p>
 
-					<p>The console works the exact same way as eval: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actual surrounded by console.log around eval like so.
+					<p>The console works the exact same way as eval: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actual surrounded by console.log around eval like so.</p>
 						<code>function greetMe(yourName) {
 						  alert('Hello ' + yourName);
 						}
 						console.log(eval('3 + 5'));</code>
-						</p>
 				</section>
 
 				<section class="main-section" id="Scratchpad">
@@ -83,7 +83,7 @@
 
 					<section class="main-section" id="Hello_world">
 						<header>Hello world</header>
-						<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+						<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
 							<code>
 								(function(){
   								"use strict";
@@ -96,7 +96,6 @@
   								/* End of your code */
 								})();
 							</code>
-						</p>
 					</section>
 			</main>
 		</div>

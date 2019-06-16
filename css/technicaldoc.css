@@ -11,6 +11,10 @@
 }
 
 /* BEGIN ELEMENTS	*/
+code {
+	margin: 20px 0px 20px 0px;
+}
+
 header {
 	font-size: 150%;
 }
