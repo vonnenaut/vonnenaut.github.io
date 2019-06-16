@@ -1,27 +1,54 @@
 /*
  * technicaldoc.css
- * css for Product Landing Page 
+ * css for Technical Documentation Page 
  /* */
  /* BEGIN IMPORT		*/
 
 /* BEGIN CLASSES    */
 .main-section {
 	grid-area: info;
-	padding: 50px;
+	padding: 20px 0px 30px 0px;
+}
+
+.nav-link {
+	border-style: outset;
+	border-width: 1px 2px 5px 1px;
+	border-color: black;
+	border-radius: 8px;
+	display: block;
+	color: black;
+	opacity: .75;
+	padding: 1px 0px 5px 5px;
+	width: 100%;
 }
 
 /* BEGIN ELEMENTS	*/
+a {
+	text-decoration: none;
+}
+
 code {
-	margin: 20px 0px 20px 0px;
+	margin: 50px 0px 50px 0px;
 }
 
 header {
-	font-size: 150%;
+	font-size: 165%;
+}
+
+li {
+	padding: 5px;
 }
 
 ul {
-	max-width: 80%;
-	margin: 25px;
+	margin: 0px 0px 0px 10px;
+}
+
+ul.nav {
+	list-style: none;
+	font-size: 115%;
+	width: 90%;
+	margin: 0;
+	padding: 0;
 }
 /*BEGIN SECTION IDs	*/
 #main-body {
@@ -42,7 +69,10 @@ ul {
 #navbar {
 	grid-area: nav;
 	position: fixed;
+	display: block;
 	text-align: left;
+	padding: 0;
+	margin: 0;
 }
 
 @media screen and (max-width: 600px) {

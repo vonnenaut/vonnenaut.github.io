@@ -8,7 +8,7 @@
 		<div id="main-body">
 			<nav id="navbar">
 				<header>JS Documentation</header>
-				<ul>
+				<ul class="nav">
 					<li><a class="nav-link" href="#Introduction">Introduction</a></li>
 					<li><a class="nav-link" href="#What_You_Should_Already_Know">What You Should Already Know</a></li>
 					<li><a class="nav-link" href="What_is_Javascript?">What is Javascript?</a></li>
@@ -68,9 +68,10 @@
 					<p>To open the Web Console (Ctrl+Shift+I on Windows and Linux or Cmd-Option-K on Mac), select "Web Console" from the "Developer" menu, which is under the "Tools" menu in Firefox. It appears at the bottom of the browser window. Along the bottom of the console is a command line that you can use to enter JavaScript, and the output appears in the panel above:</p>
 
 					<p>The console works the exact same way as eval: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actual surrounded by console.log around eval like so.</p>
-						<code>function greetMe(yourName) {
-						  alert('Hello ' + yourName);
-						}
+						<code>
+							function greetMe(yourName) {<br>
+						  &nbsp;&nbsp;alert('Hello ' + yourName);<br>
+						}<br>
 						console.log(eval('3 + 5'));</code>
 				</section>
 
@@ -85,15 +86,15 @@
 						<header>Hello world</header>
 						<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
 							<code>
-								(function(){
-  								"use strict";
-  								/* Start of your code */
-  								function greetMe(yourName) {
-    							alert('Hello ' + yourName);
-  								}
-  
-  								greetMe('World');
-  								/* End of your code */
+								(function(){<br>
+  								&nbsp;&nbsp;"use strict";<br>
+  								&nbsp;&nbsp;/* Start of your code */<br>
+  								&nbsp;&nbsp;function greetMe(yourName) {<br>
+    							&nbsp;&nbsp;&nbsp;&nbsp;alert('Hello ' + yourName);<br>
+  								&nbsp;&nbsp;}<br>
+  								<br>
+  								&nbsp;&nbsp;greetMe('World');<br>
+  								&nbsp;&nbsp;/* End of your code */<br>
 								})();
 							</code>
 					</section>
