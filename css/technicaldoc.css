@@ -11,8 +11,13 @@
 }
 
 /* BEGIN ELEMENTS	*/
+header {
+	font-size: 150%;
+}
+
 ul {
 	max-width: 80%;
+	margin: 25px;
 }
 /*BEGIN SECTION IDs	*/
 #main-body {
@@ -21,17 +26,19 @@ ul {
 	grid-gap: 10px;
 	grid-template-areas:
 		"nav info";
+	text-align: center;
 }
 
 #main-doc {
 	grid-area: info;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 #navbar {
 	grid-area: nav;
 	position: fixed;
+	text-align: left;
 }
 
 @media screen and (max-width: 600px) {
