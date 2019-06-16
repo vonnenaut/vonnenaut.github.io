@@ -11,12 +11,14 @@
 				<ul class="nav">
 					<li><a class="nav-link" href="#Introduction">Introduction</a></li>
 					<li><a class="nav-link" href="#What_You_Should_Already_Know">What You Should Already Know</a></li>
-					<li><a class="nav-link" href="What_is_Javascript?">What is Javascript?</a></li>
+					<li><a class="nav-link" href="#What_is_Javascript?">What is Javascript?</a></li>
 					<li><a class="nav-link" href="#Javascript_and_Java">JavaScript and Java</a></li>
-					<li><a class="nav-link" href="Getting_Started_with_Javascript">Getting Started with JavaScript</a></li>
-					<li><a class="nav-link" href="The_Web_Console">The Web Console</a></li>
-					<li><a class="nav-link" href="Scratchpad">Scratchpad</a></li>
-					<li><a class="nav-link" href="Hello_world">Hello world</a></li>
+					<li><a class="nav-link" href="#Getting_Started_with_Javascript">Getting Started with JavaScript</a></li>
+					<li><a class="nav-link" href="#The_Web_Console">The Web Console</a></li>
+					<li><a class="nav-link" href="#Scratchpad">Scratchpad</a></li>
+					<li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+					<li><a class="nav-link" href="#Basics">Basics</a></li>
+				</ul>
 			</nav>
 			
 			<main id = "main-doc">
@@ -97,6 +99,56 @@
   								&nbsp;&nbsp;/* End of your code */<br>
 								})();
 							</code>
+					</section>
+
+					<section class="main-section" id="Basics">
+						<header>Basics</header>
+						<p>JavaScript borrows most of its syntax from Java, C and C++, but is also influenced by Awk, Perl and Python.</p>
+
+						<p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+							
+							<code>var Früh = "foobar";
+							</code>
+						
+						<p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
+
+						<p>In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+
+						<p>A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they must be separated by semicolons. ECMAScript also has rules for automatic insertion of semicolons (ASI) to end statements. (For more information, see the detailed reference about JavaScript's lexical grammar.) It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.</p>
+
+						<p>The source text of JavaScript script gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. Spaces, tabs, and newline characters are considered whitespace.</p>
+					</section>
+
+					<section class="main-section" id="Comments">
+						<header>Comments</header>
+						<p>The syntax of comments is the same as in C++ and in many other languages:</p>
+							<code>
+								// a one line comment<br>
+								<br> 
+								/* this is a longer,<br>
+ 								* multi-line comment<br>
+ 								*/<br>
+ 								<br>
+								/* You can't, however, /* nest comments */ SyntaxError */
+							</code>
+						<p>Comments behave like whitespace and are discarded during script execution.</p>
+					</section>
+
+					<section class="main-section" id="Declarations">
+						<header>Declarations</header>
+						<p>There are three kinds of declarations in JavaScript.</p>
+
+						<code>var</code>
+						
+						<p>Declares a variable, optionally initializing it to a value.</p>
+
+						<code>let</code>
+
+						<p>Declares a block-scoped, local variable, optionally initializing it to a value.</p>
+
+						<code>const</code>
+
+						<p>Declares a block-scoped, read-only named constant.</p>
 					</section>
 			</main>
 		</div>
