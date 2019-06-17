@@ -159,4 +159,18 @@ h4 {
 	body {
 		font-size: 250%;
 	}
+
+@media screen
+	and (device-width: 360px)
+	and (device-height: 640px)
+	and (-webkit-device-pixel-ratio: 3) {
+		col {
+			flex: 100%;
+			max-width: 100%;
+		}
+
+		body {
+			font-size: 250%;
+		}
+	}
 /* END OF FILE:  portfolio.css	*/
