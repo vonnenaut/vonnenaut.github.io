@@ -1,0 +1,157 @@
+/*
+ * portfolio.css
+ * css for Personal Portfolio Page 
+ /* */
+ /* BEGIN IMPORT		*/
+
+/* BEGIN CLASSES    */
+.project-tile {
+	font-size: 125%;
+	color: black;
+	background-color: white;
+	border-color: #8888;
+	border-style: outset;
+	border-width: 1px 2px 4px 1px;
+	border-radius: 25px;
+	z-index: 2;
+	text-align: left;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 4px;
+}
+
+.col {
+	flex: 25%;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 25%;
+	padding: 0px 5px 5px 5px;
+}
+
+.thumbnail {
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 25px;
+}
+
+/* BEGIN ELEMENTS	*/
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+footer {
+	padding: 10px 0px 20px 0px;
+}
+
+h1, h2, h3 {
+}
+
+h1 {
+	font-size: 260%;
+}
+
+h2 {
+	font-size: 210%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+h4 {
+	font-size: 90%;
+}
+
+/*BEGIN SECTION IDs	*/
+#content-area {
+	grid-area: content;
+	background-color: black;
+	background-image: url("../img/bg_dk2.jpg");
+	background-position: center;
+	background-repeat: none;
+	background-size: cover;
+	opacity: 0.85;
+	padding: 0px;
+	margin: 20px 5px 25px 5px;
+	z-index: 1;
+}
+
+#frame {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;
+	grid-gap: 10px;
+	grid-template-areas:
+		"nav"
+		"content";
+	text-align: center;
+}
+
+#navbar {
+	grid-area: nav;
+	color: black;
+	background-color: white;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	padding: 20px 0px 10px 0px;
+	margin: 0px;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 3;
+}
+
+#nav-list, li, #project-grid {
+	text-align: center;
+	display: inline-block;
+	list-style: none;
+	padding-right: 3px;
+	margin: 0 auto;
+}
+
+#projects {
+	padding: 10px 3px 20px 3px;
+	margin: 5px 2px 10px 2px;
+}
+
+#project-text {
+	/* display text over image */
+
+}
+
+#welcome-section {
+	color: white;
+	text-align: left;
+	height: 100vh;
+	width: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 25px;
+	margin: 0;
+}
+
+/*BEGIN MEDIA QUERIES	*/
+@media screen and (max-width: 600px) {
+	.col {
+		flex: 50%;
+		max-width: 50%;
+	}
+
+@media screen and (max-width: 400px) {
+	.col {
+		flex: 100%;
+		max-width: 100%;
+	}
+/* END OF FILE:  portfolio.css	*/
