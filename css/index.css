@@ -47,6 +47,7 @@ a {
 }
 
 body {
+	font-size: 2vw;
 	padding: 0;
 	margin: 0;
 }
@@ -153,5 +154,9 @@ h4 {
 	.col {
 		flex: 100%;
 		max-width: 100%;
+	}
+
+	body {
+		font-size: 250%;
 	}
 /* END OF FILE:  portfolio.css	*/
