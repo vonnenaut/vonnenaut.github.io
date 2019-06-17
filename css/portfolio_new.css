@@ -12,26 +12,32 @@
 	border-color: #8888;
 	border-style: outset;
 	border-width: 1px 2px 4px 1px;
+	border-radius: 25px;
 	z-index: 2;
+	text-align: left;
 }
 
 .row {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 	padding: 0 4px;
 }
 
-
 .col {
-	flex: 33%;
-	max-width: 33%;
-	padding: 0 4px;
+	flex: 25%;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 25%;
+	padding: 0px 5px 5px 5px;
 }
 
 .thumbnail {
-	margin-top: 8px;
+	margin: 0;
 	vertical-align: middle;
 	width: 100%;
+	border-radius: 25px;
 }
 
 /* BEGIN ELEMENTS	*/
@@ -73,7 +79,6 @@ h4 {
 	background-repeat: none;
 	background-size: cover;
 	opacity: 0.85;
-	text-align: left;
 	padding: 0px;
 	margin: 20px 5px 25px 5px;
 	z-index: 1;
@@ -115,17 +120,16 @@ h4 {
 #projects {
 	padding: 10px 3px 20px 3px;
 	margin: 5px 2px 10px 2px;
-	width: 100%;
-	text-align: center;
-	display: inline-block;
 }
 
 #project-text {
 	/* display text over image */
+
 }
 
 #welcome-section {
 	color: white;
+	text-align: left;
 	height: 100vh;
 	width: 100vh;
 	display: table-cell;
