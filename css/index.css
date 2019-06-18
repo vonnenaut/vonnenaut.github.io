@@ -153,23 +153,6 @@ h4 {
 	body {
 		font-size: 120%;
 	}
-
-	/*#frame {
-	display: grid;
-	grid-template-columns: 2fr;
-	grid-template-rows: 1fr;
-	grid-gap: 10px;
-	grid-template-areas:
-		"nav content";
-	text-align: center;
-	}
-
-	#nav-list, li, #project-grid {
-	text-align: left;
-	list-style: none;
-	padding-bottom: 3px;
-	margin: 0 auto;
-	}*/
 }
 
 @media screen and (max-width: 800px) {
@@ -183,6 +166,10 @@ h4 {
 	.col {
 		flex: 100%;
 		max-width: 100%;
+	}
+
+	body {
+		font-size: 4vw;
 	}
 }
 
