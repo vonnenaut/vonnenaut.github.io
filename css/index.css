@@ -144,14 +144,14 @@ h4 {
 }
 
 /*BEGIN MEDIA QUERIES	*/
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 1000px) {
 	.col {
 		flex: 25%;
 		max-width: 50%;
 	}
 
 	body {
-		font-size: 350%;
+		font-size: 120%;
 	}
 }
 
@@ -170,6 +170,12 @@ h4 {
 
 	body {
 		font-size: 150%;
+	}
+}
+
+@media screen and not (aspect-ratio: 4/3) and not (aspect-ratio:; 16/9) {
+	body {
+		font-size: 3.5vw;
 	}
 }
 /* END OF FILE:  portfolio.css	*/
