@@ -26,10 +26,10 @@
 }
 
 .col {
-	flex: 25%;
+	flex: 15%;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 25%;
+	max-width: 30%;
 	padding: 0px 5px 5px 5px;
 }
 
@@ -144,21 +144,32 @@ h4 {
 }
 
 /*BEGIN MEDIA QUERIES	*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.col {
-		flex: 50%;
+		flex: 25%;
 		max-width: 50%;
 	}
 
 	body {
-		font-size: 160%;
+		font-size: 120%;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
+	.col {
+		flex: 40%;
+		max-width: 75%;
+	}
+}
+
+@media screen and (max-width: 650px) {
 	.col {
 		flex: 100%;
 		max-width: 100%;
+	}
+
+	body {
+		font-size: 150%;
 	}
 }
 /* END OF FILE:  portfolio.css	*/
