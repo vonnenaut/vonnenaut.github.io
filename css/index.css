@@ -47,7 +47,7 @@ a {
 }
 
 body {
-	font-size: 2vw;
+	font-size: 1.5vw;
 	padding: 0;
 	margin: 0;
 }
@@ -144,33 +144,21 @@ h4 {
 }
 
 /*BEGIN MEDIA QUERIES	*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	.col {
 		flex: 50%;
 		max-width: 50%;
 	}
 
-@media screen and (max-width: 600px) {
+	body {
+		font-size: 160%;
+	}
+}
+
+@media screen and (max-width: 400px) {
 	.col {
 		flex: 100%;
 		max-width: 100%;
 	}
-
-	body {
-		font-size: 250%;
-	}
-
-@media screen
-	and (device-width: 360px)
-	and (device-height: 640px)
-	and (-webkit-device-pixel-ratio: 3) {
-		col {
-			flex: 100%;
-			max-width: 100%;
-		}
-
-		body {
-			font-size: 250%;
-		}
-	}
+}
 /* END OF FILE:  portfolio.css	*/
