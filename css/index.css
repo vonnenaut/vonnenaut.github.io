@@ -155,10 +155,14 @@ h4 {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
 	.col {
 		flex: 40%;
 		max-width: 75%;
+	}
+
+	body {
+		font-size: 4vw;
 	}
 }
 
@@ -166,10 +170,6 @@ h4 {
 	.col {
 		flex: 100%;
 		max-width: 100%;
-	}
-
-	body {
-		font-size: 4vw;
 	}
 }
 
