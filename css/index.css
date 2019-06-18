@@ -6,38 +6,25 @@
 
 /* BEGIN CLASSES    */
 .project-tile {
+	/* TODO: Fix Flex to apply to project tile and add grid to apply to entire projects area */
 	font-size: 125%;
 	color: black;
 	background-color: white;
-	border-color: #8888;
+	border-color: #5555;
 	border-style: outset;
 	border-width: 1px 2px 4px 1px;
-	border-radius: 25px;
+	border-radius: 30px;
 	z-index: 2;
 	text-align: left;
-}
-
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 0 4px;
-}
-
-.col {
-	flex: 15%;
-	flex-direction: column;
-	justify-content: center;
-	max-width: 30%;
-	padding: 0px 5px 5px 5px;
+	padding: 0px 5px 0px 5px;
 }
 
 .thumbnail {
 	margin: 0;
 	vertical-align: middle;
 	width: 100%;
-	border-radius: 25px;
+	min-height: 3vw;
+	border-radius: 30px;
 }
 
 /* BEGIN ELEMENTS	*/
@@ -123,8 +110,12 @@ h4 {
 }
 
 #projects {
-	padding: 10px 3px 20px 3px;
-	margin: 40px 15px 50px 15px;
+	/* TODO: Fix Flex to apply to project tile and add grid to apply to entire projects area */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+	padding: 10px;
+	margin: 0;
 }
 
 #project-text {
@@ -144,7 +135,7 @@ h4 {
 }
 
 /*BEGIN MEDIA QUERIES	*/
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
 	.col {
 		flex: 25%;
 		max-width: 50%;
@@ -171,6 +162,6 @@ h4 {
 		flex: 100%;
 		max-width: 100%;
 	}
-}
+}*/
 
 /* END OF FILE:  index.css	*/
