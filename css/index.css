@@ -177,5 +177,13 @@ h4 {
 	body {
 		font-size: 3.5vw;
 	}
+
+	#nav-list, li, #project-grid {
+	text-align: left;
+	display: block;
+	list-style: none;
+	padding-bottom: 3px;
+	margin: 0 auto;
+	}
 }
 /* END OF FILE:  portfolio.css	*/
