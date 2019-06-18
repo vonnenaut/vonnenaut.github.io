@@ -7,12 +7,6 @@
 /* BEGIN CLASSES    */
 
 /* BEGIN ELEMENTS	*/
-@media screen and (max-width: 450px) {
-	body {
-		font-size: 12px;
-	}
-}
-
 body {
 		text-align: center;
 		margin: 0px;
@@ -107,4 +101,12 @@ p {
 	height: 30%;
 	width: 60%;
 }
+
+/* BEGNI MEDIA QUERIES */
+@media screen and (max-width: 450px) {
+	body {
+		font-size: 12px;
+	}
+}
+
 /* END OF FILE:  productlanding.css	*/

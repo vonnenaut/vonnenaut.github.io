@@ -1,6 +1,6 @@
 /*
- * portfolio.css
- * css for Personal Portfolio Page 
+ * index.css
+ * css for vonnenaut.github.io index.html
  /* */
  /* BEGIN IMPORT		*/
 
@@ -153,6 +153,23 @@ h4 {
 	body {
 		font-size: 120%;
 	}
+
+	/*#frame {
+	display: grid;
+	grid-template-columns: 2fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	grid-template-areas:
+		"nav content";
+	text-align: center;
+	}
+
+	#nav-list, li, #project-grid {
+	text-align: left;
+	list-style: none;
+	padding-bottom: 3px;
+	margin: 0 auto;
+	}*/
 }
 
 @media screen and (max-width: 800px) {
@@ -173,17 +190,4 @@ h4 {
 	}
 }
 
-@media screen and not (aspect-ratio: 4/3) and not (aspect-ratio: 16/9) {
-	body {
-		font-size: 3.5vw;
-	}
-
-	#nav-list, li, #project-grid {
-	text-align: left;
-	display: block;
-	list-style: none;
-	padding-bottom: 3px;
-	margin: 0 auto;
-	}
-}
-/* END OF FILE:  portfolio.css	*/
+/* END OF FILE:  index.css	*/
