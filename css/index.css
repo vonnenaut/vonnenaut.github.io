@@ -135,7 +135,7 @@ h4 {
 }
 
 /*BEGIN MEDIA QUERIES	*/
-/*@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	.col {
 		flex: 25%;
 		max-width: 50%;
@@ -162,6 +162,6 @@ h4 {
 		flex: 100%;
 		max-width: 100%;
 	}
-}*/
+}
 
 /* END OF FILE:  index.css	*/
