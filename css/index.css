@@ -47,7 +47,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 260%;
+	font-size: 290%;
 }
 
 h2 {
@@ -59,7 +59,11 @@ h3 {
 }
 
 h4 {
-	font-size: 90%;
+	font-size: 110%;
+}
+
+li {
+	padding: 0px 20px 0px 20px;
 }
 
 /*BEGIN SECTION IDs	*/
