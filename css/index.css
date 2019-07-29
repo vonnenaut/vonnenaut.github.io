@@ -5,6 +5,13 @@
  /* BEGIN IMPORT		*/
 
 /* BEGIN CLASSES    */
+.description {
+	font-size: 70%;
+	margin: 0 auto;
+	padding: 0px 15px 15px 15px;
+}
+
+
 .project-tile {
 	/* TODO: Fix Flex to apply to project tile and add grid to apply to entire projects area */
 	font-size: 125%;
@@ -24,7 +31,8 @@
 	vertical-align: middle;
 	width: 100%;
 	min-height: 3vw;
-	border-radius: 30px;
+	border-radius: 18px;
+	box-shadow: 6px 5px 5px black;
 }
 
 /* BEGIN ELEMENTS	*/
@@ -60,6 +68,7 @@ h3 {
 
 h4 {
 	font-size: 110%;
+	margin: 15px;
 }
 
 li {
@@ -124,7 +133,8 @@ li {
 
 #project-text {
 	/* display text over image */
-
+    margin: 0 auto;
+    padding: 0;
 }
 
 #welcome-section {
