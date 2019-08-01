@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>The Metaform Form</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" href="./css/surveyform.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -10,15 +11,19 @@
 			<p id="description">Please fill out this form letting us know how we can improve this form.</p>
 			</div>
 			<form id="survey-form">
-				<label id="name-label">Name:</label>
-				<input type="text" id="name" value="name" required placeholder="Enter your name.">
-				<br>
-				<label id="email-label">email:</label>
-				<input type="email" id="email" value="email" required placeholder="your email address">
-				<br>
-				<label id="number-label">number:</label>
-				<input type="number" id="number" value="number" min="1" max="10" placeholder="Enter a number between 1 and 10.">
-				<br>
+				<div class="form-group">
+					<label id="name-label">Name:</label>
+					<input type="text" id="name" value="name" required placeholder="Name">
+				</div>
+				<div class="form-group">
+					<label id="email-label">email:</label>
+					<input type="email" id="email" class="form-control" value="email" required placeholder="Email">
+				</div>				
+				<div class="form-group">
+					<label id="number-label">number:</label>
+					<input type="number" id="number" value="number" min="1" max="10" placeholder="Number">
+					<p class="help-block">Enter a number between 1 and 10.</p>
+				</div>
 				<div class="ddown">This form is best described as
 					<select id="dropdown">
 						<option value="stale">Delightful</option>
@@ -64,7 +69,7 @@
 					<textarea>Enter your comments about your comments here.</textarea>
 				</div>
 				<div id="button">
-					<button id="submit" type="submit">submit</button>
+					<button id="submit" class="btn btn-default" type="submit">submit</button>
 				</div>
 			</form>
 		</div>
