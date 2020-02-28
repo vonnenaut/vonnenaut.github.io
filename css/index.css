@@ -13,7 +13,6 @@
 
 
 .project-tile {
-	/* TODO: Fix Flex to apply to project tile and add grid to apply to entire projects area */
 	font-size: 125%;
 	color: black;
 	background-color: white;
@@ -123,7 +122,6 @@ li {
 }
 
 #projects {
-	/* TODO: Fix Flex to apply to project tile and add grid to apply to entire projects area */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 1rem;
