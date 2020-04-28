@@ -157,12 +157,30 @@ li {
 }
 
 @media screen and (max-width: 770px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 10px;
+	}
+
+	h4 {
+		font-size: 10px;
+	}
+
 	.col {
 		flex: 100%;
 		max-width: 100%;
 	}
 
-	background-image: url("../img/background_dark_mobile.jpg");
+	#content-area {
+		background-image: url("../img/background_dark_mobile.jpg");
+	}
 }
 
 /*@media screen and (max-width: 650px) {
