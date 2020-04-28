@@ -79,9 +79,10 @@ li {
 	grid-area: content;
 	background-color: black;
 	background-image: url("../img/background_dark.jpg");
-	background-position: center;
+	background-position: center center;
 	background-repeat: none;
 	background-size: cover;
+	background-attachment: fixed;
 	opacity: 0.85;
 	padding: 0px;
 	margin: 20px 5px 25px 5px;
@@ -157,8 +158,8 @@ li {
 
 @media screen and (max-width: 770px) {
 	.col {
-		flex: 40%;
-		max-width: 75%;
+		flex: 100%;
+		max-width: 100%;
 	}
 
 	background-image: url("../img/background_dark_mobile.jpg");
