@@ -178,6 +178,10 @@ li {
 		font-size: 10px;
 	}
 
+	p.description {
+		font-size: 12px;
+	}
+
 	ul#nav-list {
 		padding: 0;
 		margin: 0;
