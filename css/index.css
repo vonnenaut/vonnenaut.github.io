@@ -78,7 +78,7 @@ li {
 #content-area {
 	grid-area: content;
 	background-color: black;
-	background-image: url("../img/bg_dk2.jpg");
+	background-image: url("../img/background_dark.jpg");
 	background-position: center;
 	background-repeat: none;
 	background-size: cover;
@@ -136,10 +136,11 @@ li {
 }
 
 #welcome-section {
+	font-size: 20px;
 	color: white;
 	text-align: left;
 	height: 100vh;
-	width: 100vh;
+	width: 125vh;
 	display: table-cell;
 	vertical-align: middle;
 	padding-left: 25px;
@@ -152,28 +153,22 @@ li {
 		flex: 25%;
 		max-width: 50%;
 	}
-
-	body {
-		font-size: 145%;
-	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
 	.col {
 		flex: 40%;
 		max-width: 75%;
 	}
 
-	body {
-		font-size: 4vw;
-	}
+	background-image: url("../img/background_dark_mobile.jpg");
 }
 
-@media screen and (max-width: 650px) {
+/*@media screen and (max-width: 650px) {
 	.col {
 		flex: 100%;
 		max-width: 100%;
 	}
-}
+}*/
 
 /* END OF FILE:  index.css	*/
