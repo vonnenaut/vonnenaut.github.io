@@ -22,7 +22,8 @@
 	border-radius: 30px;
 	z-index: 2;
 	text-align: left;
-	padding: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 12px;
+	margin: 0px 0px 0px 0px;
 }
 
 .thumbnail {
@@ -63,6 +64,10 @@ h2 {
 
 h3 {
 	font-size: 100%;
+}
+
+h3.project-text {
+	margin-bottom: 4px;
 }
 
 h4 {
