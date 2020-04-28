@@ -6,7 +6,7 @@
 
 /* BEGIN CLASSES    */
 .description {
-	font-size: 70%;
+	font-size: 60%;
 	margin: 0 auto;
 	padding: 0px 15px 15px 15px;
 }
@@ -54,19 +54,19 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 290%;
+	font-size: 270%;
 }
 
 h2 {
-	font-size: 210%;
+	font-size: 190%;
 }
 
 h3 {
-	font-size: 150%;
+	font-size: 100%;
 }
 
 h4 {
-	font-size: 110%;
+	font-size: 80%;
 	margin: 15px;
 }
 
