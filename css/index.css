@@ -35,6 +35,7 @@
 img.thumbnail {
 	width: 95%;
 	min-height: 2.8vw;
+	border-radius: .4em;
 	box-shadow: 6px 8px 10px black;
 }
 
