@@ -5,6 +5,12 @@
  /* BEGIN IMPORT		*/
 
 /* BEGIN CLASSES    */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .center {
   margin: auto;
   width: 50%;
@@ -87,7 +93,7 @@ h3 {
 }
 
 h3.project-text {
-	margin-bottom: 4px;
+	padding: 10px 0px;
 }
 
 h4 {
@@ -104,20 +110,6 @@ main {
 }
 
 /*BEGIN SECTION IDs	*/
-#content-area {
-	grid-area: content;
-	background-color: black;
-	background-image: url("../img/background_dark.jpg");
-	background-position: center center;
-	background-repeat: none;
-	background-size: cover;
-	background-attachment: fixed;
-	opacity: 0.85;
-	padding: 0px;
-	margin: 20px 5px 25px 5px;
-	z-index: 1;
-}
-
 #frame {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -127,6 +119,7 @@ main {
 		"nav"
 		"content";
 	text-align: center;
+	justify-content: center;
 }
 
 #navbar {
@@ -144,20 +137,35 @@ main {
 	z-index: 3;
 }
 
+#content-area {
+	grid-area: content;
+	background-color: black;
+	background-image: url("../img/background_dark.jpg");
+	background-position: center center;
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 0.85;
+	padding: 0px;
+	z-index: 1;
+	justify-content: center;
+}
+
 #nav-list, li, #project-grid {
 	text-align: center;
 	display: inline-block;
 	list-style: none;
-	padding-right: 3px;
 	margin: 0 auto;
 }
 
 #projects {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1rem;
-	padding: 10px;
-	margin: 10;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 0rem;
+	padding: 5px;
+	width: 85%;
+	margin: auto;
+	justify-content: center;
 }
 
 #project-text {
