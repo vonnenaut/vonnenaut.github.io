@@ -5,21 +5,41 @@
  /* BEGIN IMPORT		*/
 
 /* BEGIN CLASSES    */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+}
+
 .description {
 	font-size: 15px;
-	margin: 0 auto;
-	padding: 0px 15px 15px 15px;
+	margin: 0;
+	padding: 0px 5px 10px 5px;
+}
+
+.noicon_link {
+	color: #262521;
+}
+
+.profile-link {
+	color: #262521;
 }
 
 .project-tile {
 	font-size: 125%;
 	color: black;
-	background-color: white;
+	background-color: papayawhip;
 	width: 80%;
 	border-style: solid;
-	border-color: transparent transparent transparent #002d4d;
-	border-width: 2px;
-	border-radius: 72px 8px 12px 8px;
+	border-color: #262521 transparent transparent #262521;
+	border-width: 1px;
+	border-radius: 15px 15px 15px 15px;
 	text-align: left;
 	padding: 0px 5px 0px 12px;
 	margin: 0px 0px 50px 0px;
@@ -27,13 +47,12 @@
 }
 
 img.thumbnail {
-	margin: 0;
-	width: 90%;
+	width: 95%;
 	min-height: 2.8vw;
 	border-style: solid;
-	border-color: #ffe2a8 transparent transparent #002d4d;
-	border-width: 1px 0px 0px 1px;
-	border-radius: 8px;
+	border-color: #262521 transparent transparent #262521;
+	border-width: 1px;
+	border-radius: .4em;
 	box-shadow: 6px 8px 10px black;
 }
 
@@ -45,11 +64,14 @@ a {
 
 body {
 	font-size: 1.5vw;
+	background-color: papayawhip;
 	padding: 0;
 	margin: 0;
 }
 
 footer {
+	font-size: 14px;
+	color: #262521;
 	padding: 10px 0px 20px 0px;
 }
 
@@ -66,10 +88,12 @@ h2 {
 
 h3 {
 	font-size: 17px;
+	padding-left: 3px;
+	padding-right: 5px;
 }
 
 h3.project-text {
-	margin-bottom: 4px;
+	padding: 10px 0px;
 }
 
 h4 {
@@ -81,21 +105,11 @@ li {
 	padding: 0px 20px 0px 20px;
 }
 
-/*BEGIN SECTION IDs	*/
-#content-area {
+main {
 	grid-area: content;
-	background-color: black;
-	background-image: url("../img/background_dark.jpg");
-	background-position: center center;
-	background-repeat: none;
-	background-size: cover;
-	background-attachment: fixed;
-	opacity: 0.85;
-	padding: 0px;
-	margin: 20px 5px 25px 5px;
-	z-index: 1;
 }
 
+/*BEGIN SECTION IDs	*/
 #frame {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -105,6 +119,7 @@ li {
 		"nav"
 		"content";
 	text-align: center;
+	justify-content: center;
 }
 
 #navbar {
@@ -122,20 +137,35 @@ li {
 	z-index: 3;
 }
 
+#content-area {
+	grid-area: content;
+	background-color: black;
+	background-image: url("../img/background_dark.jpg");
+	background-position: center center;
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 0.85;
+	padding: 0px;
+	z-index: 1;
+	justify-content: center;
+}
+
 #nav-list, li, #project-grid {
 	text-align: center;
 	display: inline-block;
 	list-style: none;
-	padding-right: 3px;
 	margin: 0 auto;
 }
 
 #projects {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1rem;
-	padding: 10px;
-	margin: 10;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 0rem;
+	padding: 5px;
+	width: 85%;
+	margin: auto;
+	justify-content: center;
 }
 
 #project-text {
@@ -179,6 +209,12 @@ li {
 
 	h4 {
 		font-size: 10px;
+	}
+
+	footer {
+		font-size: 12px;
+		color: #262521;
+		padding: 0;
 	}
 
 	p.description {
