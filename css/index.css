@@ -14,12 +14,6 @@
   padding: 5px;
 }
 
-.description {
-	font-size: 15px;
-	margin: 0;
-	padding: 0px 5px 10px 5px;
-}
-
 .noicon_link {
 	color: #262521;
 }
@@ -91,7 +85,7 @@ h2 {
 }
 
 h3 {
-	font-size: 17px;
+	font-size: 19px;
 	padding-left: 3px;
 	padding-right: 5px;
 }
@@ -111,6 +105,12 @@ li {
 
 main {
 	grid-area: content;
+}
+
+p.description {
+	font-size: 17px;
+	margin: 0;
+	padding: 0px 5px 10px 5px;
 }
 
 p.source-link {
