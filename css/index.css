@@ -45,6 +45,7 @@
 
 img.thumbnail {
 	width: 95%;
+	background-color: white;
 	min-height: 2.8vw;
 	border-style: solid;
 	border-color: #262521 transparent transparent #262521;
