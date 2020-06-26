@@ -66,6 +66,12 @@ body {
 	margin: 0;
 }
 
+div.project-tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 footer {
 	font-size: 14px;
 	color: #262521;
@@ -104,6 +110,16 @@ li {
 
 main {
 	grid-area: content;
+}
+
+p.source-link {
+	display: flex;
+	justify-content: flex-end;
+	margin: 3px;
+}
+
+a.source-link {
+	color: #8f4009;
 }
 
 /*BEGIN SECTION IDs	*/
