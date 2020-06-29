@@ -2,15 +2,13 @@
  * index.css
  * css for vonnenaut.github.io index.html
  /* */
- /* BEGIN IMPORT		*/
-
-/* BEGIN CLASSES    */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* BEGIN CLASSES    */
 .center {
   margin: auto;
   width: 50%;
@@ -142,7 +140,6 @@ main {
 	background-color: black;
 	background-image: url("../img/background_dark.jpg");
 	background-position: center center;
-	background-repeat: none;
 	background-size: cover;
 	background-attachment: fixed;
 	opacity: 0.85;
