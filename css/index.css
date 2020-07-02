@@ -30,6 +30,7 @@
 }
 
 .source-link {
+	font-size: 17px;
 	text-align: right;
 }
 
@@ -48,29 +49,27 @@
 	z-index: 2;
 	position: relative;
 	animation-name: tileanimation;
-	animation-duration: 3.1s;
+	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 	transition-duration: 1.3s;
 }
 
-.project-tile:hover {
-  
-}
-
-nav#navbar {
-	animation-name: navlistanimation;
-	animation-duration: 1.2s;
+.thumbnail {
+	max-width: 95%;
+	animation-name: thumbnailanimation;
+	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
-}
-
-@keyframes navlistanimation {
-	0% { left: 1500px; top: 0; }
-	100% { left: 0; top: 0; }
+	/* transition-duration: 1s; */
 }
 
 @keyframes tileanimation {
-  0% { left: 0; top: -2800px; transform: rotateY(360deg);}
+  0% { left: 0; top: -1800px; transform: rotateY(180deg);}
   100% { left: 0; top: 0; }
+}
+
+@keyframes thumbnailanimation {
+	0% { width: 0; height: 0;}
+	100% { width: 100%; height: 100%;}
 }
 
 img.thumbnail {
