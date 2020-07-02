@@ -29,6 +29,10 @@
 	color: #262521;
 }
 
+.source-link {
+	text-align: right;
+}
+
 .project-tile {
 	font-size: 125%;
 	color: black;
