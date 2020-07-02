@@ -229,7 +229,8 @@ main {
 	}
 
 	h3 {
-		font-size: 14px;
+		font-size: 10px;
+		padding: 0;
 	}
 
 	h4 {
@@ -248,11 +249,13 @@ main {
 
 	ul#nav-list {
 		width: 100%;
+		font-size: 40%;
 		padding: 0;
 	}
 
 	ul#nav-list li {
 		padding: 0;
+		margin: 0;
 	}
 
 	.col {
@@ -264,6 +267,10 @@ main {
 		padding: 5px;
 	}
 
+	.svg-inline--fa {
+		font-size: 1.5em;
+	}
+
 	#content-area {
 		background-image: url("../img/background_dark_mobile.jpg");
 	}
@@ -271,7 +278,7 @@ main {
 	#navbar {
 		font-size: 20px;
 		max-height: 19%;
-		padding: 0px 0px 5px 0px;
+		padding: 0;
 	}
 
 
