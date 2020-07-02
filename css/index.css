@@ -229,7 +229,7 @@ main {
 	}
 
 	h3 {
-		font-size: 10px;
+		font-size: 12px;
 		padding: 0;
 	}
 
@@ -249,7 +249,7 @@ main {
 
 	ul#nav-list {
 		width: 100%;
-		font-size: 40%;
+/*		font-size: 40%;*/
 		padding: 0;
 	}
 
@@ -268,7 +268,7 @@ main {
 	}
 
 	.svg-inline--fa {
-		font-size: 1.5em;
+		font-size: 0.9em;
 	}
 
 	#content-area {
