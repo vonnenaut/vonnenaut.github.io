@@ -164,6 +164,7 @@ main {
 	padding: 5px;
 	width: 85%;
 	margin: auto;
+	justify-items: center;
 	justify-content: center;
 }
 
