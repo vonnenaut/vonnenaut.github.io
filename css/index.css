@@ -1,14 +1,15 @@
 /*
  * index.css
  * css for vonnenaut.github.io index.html
- /* */
+ /*				*/
+ /* BEGIN Reset 		*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* BEGIN CLASSES    */
+/* BEGIN Classes		*/
 .center {
   margin: auto;
   width: 50%;
@@ -81,6 +82,8 @@ img.thumbnail {
 	box-shadow: 6px 8px 10px black;
 }
 
+
+/* BEGIN Keyframes Animations 		*/
 @keyframes tileanimation {
   0% { left: 0; top: -1800px; transform: rotateY(180deg);}
   100% { left: 0; top: 0; }
@@ -91,7 +94,7 @@ img.thumbnail {
 	100% { width: 100%; height: 100%;}
 }
 
-/* BEGIN ELEMENTS	*/
+/* BEGIN Elements	*/
 a {
 	text-decoration: none;
 	color: black;
@@ -138,7 +141,7 @@ main {
 	grid-area: content;
 }
 
-/*BEGIN SECTION IDs	*/
+/*BEGIN IDs	*/
 #frame {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -238,8 +241,6 @@ main {
 	}
 
 	/* BEGIN Elements		*/
-
-
 	h1 {
 		font-size: 35px;
 	}
@@ -274,7 +275,6 @@ main {
 		margin: 0;
 	}
 
-
 	#content-area {
 		background-image: url("../img/background_dark_mobile.jpg");
 	}
@@ -284,16 +284,14 @@ main {
 		max-height: 19%;
 		padding: 0;
 	}
-
-
 }
 
 @media screen and (max-width: 260px) {
+	/* BEGIN IDs		*/
 	#navbar {
 		font-size: 15px;
 		min-height: 35%;
 		padding: 0px 0px 5px 0px;
 	}
 }
-
 /* END OF FILE:  index.css	*/
