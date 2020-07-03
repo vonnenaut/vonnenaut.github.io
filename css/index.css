@@ -29,9 +29,14 @@
 	color: #262521;
 }
 
-.source-link {
-	font-size: 17px;
-	text-align: right;
+.project-text {
+    margin: 0 auto;
+    padding: 0;
+}
+
+h3.project-text {
+  font-size: 20px;
+  padding: 10px 0px;
 }
 
 .project-tile {
@@ -54,21 +59,16 @@
 	transition-duration: 1.3s;
 }
 
+.source-link {
+	font-size: 17px;
+	text-align: right;
+}
+
 .thumbnail {
 	max-width: 95%;
 	animation-name: thumbnailanimation;
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
-}
-
-@keyframes tileanimation {
-  0% { left: 0; top: -1800px; transform: rotateY(180deg);}
-  100% { left: 0; top: 0; }
-}
-
-@keyframes thumbnailanimation {
-	0% { width: 0; height: 0;}
-	100% { width: 100%; height: 100%;}
 }
 
 img.thumbnail {
@@ -79,6 +79,16 @@ img.thumbnail {
 	border-width: 1px;
 	border-radius: .4em;
 	box-shadow: 6px 8px 10px black;
+}
+
+@keyframes tileanimation {
+  0% { left: 0; top: -1800px; transform: rotateY(180deg);}
+  100% { left: 0; top: 0; }
+}
+
+@keyframes thumbnailanimation {
+	0% { width: 0; height: 0;}
+	100% { width: 100%; height: 100%;}
 }
 
 /* BEGIN ELEMENTS	*/
@@ -101,9 +111,6 @@ footer {
 	padding: 10px 0px 20px 0px;
 }
 
-h1, h2, h3 {
-}
-
 h1 {
 	font-size: 270%;
 }
@@ -113,13 +120,9 @@ h2 {
 }
 
 h3 {
-	font-size: 17px;
+	font-size: 110%;
 	padding-left: 3px;
 	padding-right: 5px;
-}
-
-h3.project-text {
-	padding: 10px 0px;
 }
 
 h4 {
@@ -194,11 +197,6 @@ main {
 	justify-content: center;
 }
 
-#project-text {
-    margin: 0 auto;
-    padding: 0;
-}
-
 #welcome-section {
 	font-size: 20px;
 	color: white;
@@ -213,6 +211,7 @@ main {
 
 /*BEGIN MEDIA QUERIES	*/
 @media screen and (max-width: 1000px) {
+	/* BEGIN classes		*/
 	.col {
 		flex: 25%;
 		max-width: 50%;
@@ -220,16 +219,37 @@ main {
 }
 
 @media screen and (max-width: 770px) {
+	/* BEGIN classes		*/
+	.col {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	p.description {
+		font-size: 12px;
+	}
+
+	.profile-link {
+		padding: 5px;
+	}
+
+	.svg-inline--fa {
+		font-size: 0.9em;
+	}
+
+	/* BEGIN Elements		*/
+
+
 	h1 {
-		font-size: 28px;
+		font-size: 35px;
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	h3 {
-		font-size: 12px;
+		font-size: 18px;
 		padding: 0;
 	}
 
@@ -243,13 +263,9 @@ main {
 		padding: 0;
 	}
 
-	p.description {
-		font-size: 12px;
-	}
-
+	/* BEGIN IDs		*/
 	ul#nav-list {
 		width: 100%;
-/*		font-size: 40%;*/
 		padding: 0;
 	}
 
@@ -258,18 +274,6 @@ main {
 		margin: 0;
 	}
 
-	.col {
-		flex: 100%;
-		max-width: 100%;
-	}
-
-	.profile-link {
-		padding: 5px;
-	}
-
-	.svg-inline--fa {
-		font-size: 0.9em;
-	}
 
 	#content-area {
 		background-image: url("../img/background_dark_mobile.jpg");
