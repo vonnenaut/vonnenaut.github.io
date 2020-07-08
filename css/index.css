@@ -62,10 +62,10 @@ h3.project-title {
 	margin: 0px 0px 50px 0px;
 	z-index: 2;
 	position: relative;
-/*	animation-name: tileanimation;
+	animation-name: tileanimation;
 	animation-duration: 3.1s;
 	animation-timing-function: ease-in;
-	transition-duration: 1.3s;*/
+	transition-duration: 1.3s;
 }
 
 .source-link {
@@ -87,10 +87,10 @@ h3.project-title {
 }
 
 /* BEGIN Keyframes Animations 		*/
-/*@keyframes tileanimation {
+@keyframes tileanimation {
   0% { left: 0; top: -2400px; transform: rotateY(180deg);}
   100% { left: 0; top: 0; }
-}*/
+}
 
 /* BEGIN Elements	*/
 a {
