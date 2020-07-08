@@ -33,10 +33,6 @@ html {
 	color: #262521;
 }
 
-/*.project-text {
-    margin: 0 auto;
-}*/
-
 h3.project-text {
   font-size: 20px;
   padding: 10px 0 10px 10px;
@@ -116,11 +112,11 @@ footer {
 }
 
 h1 {
-	font-size: 270%;
+	font-size: 230%;
 }
 
 h2 {
-	font-size: 140%;
+	font-size: 120%;
 }
 
 h3 {
@@ -153,9 +149,8 @@ main {
 	justify-content: center;
 }
 
-#navbar {
+nav {
 	grid-area: nav;
-	font-size: 20px;
 	color: black;
 	background-color: white;
 	margin: 0px;
@@ -164,17 +159,30 @@ main {
 	z-index: 3;
 }
 
-#navbar a {
+nav ul {
+	font-size: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.25rem;
+	text-align: center;
+  width: 16.666%;
+}
+
+nav a {
 	display: inline-block;
 	box-sizing: border-box;
 	line-height: 2.5;
-	padding: 0 10px;
+	padding: 0;
 	margin: 0;
 	width: 100%;
 }
 
-#navbar a:hover, 
-#navbar a:focus {
+nav a:hover, 
+nav a:focus {
   background-color: black;
   color: white;
 }
@@ -192,7 +200,7 @@ main {
 	justify-content: center;
 }
 
-#nav-list, li, #project-grid {
+li, #project-grid {
 	display: inline-block;
 	list-style: none;
 	margin: 0 auto;
@@ -255,7 +263,7 @@ main {
 	}
 
 	h2 {
-		font-size: 22px;
+		font-size: 21px;
 	}
 
 	h3 {
@@ -274,12 +282,12 @@ main {
 	}
 
 	/* BEGIN IDs		*/
-	ul#nav-list {
+	nav ul {
 		width: 100%;
 		padding: 0;
 	}
 
-	ul#nav-list li {
+	nav ul li {
 		padding: 0;
 		margin: 0;
 	}
@@ -288,7 +296,7 @@ main {
 		background-image: url("../img/background_dark_mobile.jpg");
 	}
 
-	#navbar {
+	nav ul {
 		font-size: 20px;
 		max-height: 19%;
 		padding: 0;
@@ -297,7 +305,7 @@ main {
 
 @media screen and (max-width: 260px) {
 	/* BEGIN IDs		*/
-	#navbar {
+	nav ul {
 		font-size: 15px;
 		min-height: 35%;
 		padding: 0px 0px 5px 0px;
