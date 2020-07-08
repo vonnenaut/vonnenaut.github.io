@@ -153,7 +153,7 @@ nav {
 	grid-area: nav;
 	color: black;
 	background-color: white;
-	margin: 0px;
+	margin: 0;
 	padding: 0;
 	width: 100%;
 	z-index: 3;
@@ -168,7 +168,7 @@ nav li {
 	display: inline-block;
 	font-size: 1.15rem;
 	text-align: center;
-  min-width: 12%;
+  width: 16.66%;
 }
 
 nav a {
@@ -248,8 +248,7 @@ li, #project-grid {
 		font-size: 12px;
 	}
 
-	.profile-link {
-		padding: 5px;
+	.noicon-link {
 	}
 
 	.svg-inline--fa {
@@ -286,7 +285,7 @@ li, #project-grid {
 	}
 
 	nav li {
-		font-size: 18px;
+		font-size: 0.9rem;
 		max-height: 19%;
 		padding: 0;
 	}
