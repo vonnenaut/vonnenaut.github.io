@@ -1,8 +1,4 @@
-/*
- * index.css
- * css for vonnenaut.github.io index.html
- /*				*/
- /* BEGIN Reset 		*/
+/* * index.css * css for vonnenaut.github.io index.html /*				*/ /* BEGIN Reset 		*/
 html {
 	box-sizing: border-box;
 }
@@ -33,19 +29,23 @@ html {
 	color: #262521;
 }
 
-h3.project-text {
-  font-size: 20px;
-  padding: 10px 0 10px 10px;
+h3.project-title {
+  font-size: 21px;
 }
 
-h3.project-text .source-link {
-	padding: 10px 5px;
-	width: 90%;
-}
-
-.project-text:hover, .source-link:hover {
+.project-title:hover, .project-title:focus, 
+.source-link-text:hover, .source-link-text:focus {
 	color: papayawhip;
 	background-color: black;
+}
+
+.source-link-text {
+   font-size: 18px;
+}
+
+.project-title {
+  font-size: 22px;
+  padding: 10px 0 10px 10px;
 }
 
 .project-tile {
@@ -62,17 +62,18 @@ h3.project-text .source-link {
 	margin: 0px 0px 50px 0px;
 	z-index: 2;
 	position: relative;
-	animation-name: tileanimation;
+/*	animation-name: tileanimation;
 	animation-duration: 3.1s;
 	animation-timing-function: ease-in;
-	transition-duration: 1.3s;
+	transition-duration: 1.3s;*/
 }
 
 .source-link {
-	font-size: 17px;
 	font-style: italic;
 	text-align: center;
+	line-height: 3rem;
 	padding: 0 0 1.2rem 0;
+	margin: 0;
 }
 
 .thumbnail {
@@ -86,10 +87,10 @@ h3.project-text .source-link {
 }
 
 /* BEGIN Keyframes Animations 		*/
-@keyframes tileanimation {
+/*@keyframes tileanimation {
   0% { left: 0; top: -2400px; transform: rotateY(180deg);}
   100% { left: 0; top: 0; }
-}
+}*/
 
 /* BEGIN Elements	*/
 a {
@@ -124,8 +125,7 @@ h3 {
 }
 
 h4 {
-	font-size: 18px;
-	margin: 15px;
+  font-size: 175%;
 }
 
 li {
@@ -162,6 +162,7 @@ nav {
 nav ul {
 	font-size: 0;
 	width: 100%;
+	list-style-type: none;
 }
 
 nav li {
@@ -265,12 +266,8 @@ li, #project-grid {
 	}
 
 	h3 {
-		font-size: 18px;
+		font-size: 16px;
 		padding: 0;
-	}
-
-	h4 {
-		font-size: 10px;
 	}
 
 	footer {
