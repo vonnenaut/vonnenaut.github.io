@@ -281,22 +281,12 @@ li, #project-grid {
 	}
 
 	/* BEGIN IDs		*/
-	nav ul {
-		width: 100%;
-		padding: 0;
-	}
-
-	nav ul li {
-		padding: 0;
-		margin: 0;
-	}
-
 	#content-area {
 		background-image: url("../img/background_dark_mobile.jpg");
 	}
 
-	nav ul {
-		font-size: 20px;
+	nav li {
+		font-size: 18px;
 		max-height: 19%;
 		padding: 0;
 	}
@@ -304,9 +294,8 @@ li, #project-grid {
 
 @media screen and (max-width: 260px) {
 	/* BEGIN IDs		*/
-	nav ul {
+	nav li {
 		font-size: 15px;
-		min-height: 35%;
 		padding: 0px 0px 5px 0px;
 	}
 }
