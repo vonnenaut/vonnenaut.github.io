@@ -161,15 +161,14 @@ nav {
 
 nav ul {
 	font-size: 0;
-	list-style-type: none;
 	width: 100%;
 }
 
 nav li {
 	display: inline-block;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	text-align: center;
-  width: 16.666%;
+  min-width: 12%;
 }
 
 nav a {
