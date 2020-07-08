@@ -285,9 +285,7 @@ li, #project-grid {
 	}
 
 	nav li {
-		font-size: 0.9rem;
-		max-height: 19%;
-		padding: 0;
+		font-size: 0.8rem;
 	}
 }
 
@@ -295,7 +293,7 @@ li, #project-grid {
 	/* BEGIN IDs		*/
 	nav li {
 		font-size: 15px;
-		padding: 0px 0px 5px 0px;
+		margin-left: 5px;
 	}
 }
 /* END OF FILE:  index.css	*/
