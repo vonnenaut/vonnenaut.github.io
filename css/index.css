@@ -3,8 +3,12 @@
  * css for vonnenaut.github.io index.html
  /*				*/
  /* BEGIN Reset 		*/
-* {
-  box-sizing: border-box;
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +17,6 @@
 .center {
   margin: auto;
   width: 50%;
-  padding: 5px;
 }
 
 .description {
@@ -30,14 +33,23 @@
 	color: #262521;
 }
 
-.project-text {
+/*.project-text {
     margin: 0 auto;
-    padding: 0;
-}
+}*/
 
 h3.project-text {
   font-size: 20px;
-  padding: 10px 0px;
+  padding: 10px 0 10px 10px;
+}
+
+h3.project-text .source-link {
+	padding: 10px 5px;
+	width: 90%;
+}
+
+.project-text:hover, .source-link:hover {
+	color: papayawhip;
+	background-color: black;
 }
 
 .project-tile {
@@ -62,14 +74,12 @@ h3.project-text {
 
 .source-link {
 	font-size: 17px;
-	text-align: right;
+	font-style: italic;
+	text-align: center;
+	padding: 0 0 1.2rem 0;
 }
 
 .thumbnail {
-	max-width: 95%;
-}
-
-img.thumbnail {
 	width: 95%;
 	min-height: 2.8vw;
 	border-style: solid;
@@ -94,7 +104,7 @@ a {
 body {
 	font-family: Courier, Times, Helvetica monospace;
 	font-size: 1.5vw;
-	background-color: papayawhip;
+	background-color: white;
 	padding: 0;
 	margin: 0;
 }
@@ -122,6 +132,11 @@ h4 {
 	margin: 15px;
 }
 
+li {
+	margin: 0;
+	padding: 0;
+}
+
 main {
 	grid-area: content;
 }
@@ -131,7 +146,6 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr;
-	grid-gap: 10px;
 	grid-template-areas:
 		"nav"
 		"content";
@@ -140,24 +154,22 @@ main {
 }
 
 #navbar {
-	font-size: 20px;
 	grid-area: nav;
+	font-size: 20px;
 	color: black;
 	background-color: white;
-	position: fixed;
-	display: flex;
-	align-items: center;
 	margin: 0px;
-	text-transform: uppercase;
+	padding: 0;
 	width: 100%;
 	z-index: 3;
 }
 
 #navbar a {
-	box-sizing: border-box;
 	display: inline-block;
+	box-sizing: border-box;
 	line-height: 2.5;
 	padding: 0 10px;
+	margin: 0;
 	width: 100%;
 }
 
@@ -175,13 +187,12 @@ main {
 	background-size: cover;
 	background-attachment: fixed;
 	opacity: 0.85;
-	padding: 0px;
+	padding: 0;
 	z-index: 1;
 	justify-content: center;
 }
 
 #nav-list, li, #project-grid {
-	text-align: center;
 	display: inline-block;
 	list-style: none;
 	margin: 0 auto;
